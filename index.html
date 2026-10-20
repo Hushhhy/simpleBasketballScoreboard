@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="timeGame">
+            <div>
+                <button class="newGame-el" onclick="restart()">
+                    <h3>NEW GAME</h3>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="home">
+                <h3>HOME</h3>
+                <h2 class="points" id="hPoint-el">0</h2>
+                <div class="btn-el">
+                    <button onclick="addOneHome()">+1</button>
+                    <button onclick="addTwoHome()">+2</button>
+                    <button onclick="addThreeHome()">+3</button>
+                </div>
+            </div>
+            <div class="period">
+                <h3>PERIOD</h3>
+                <h2 class="points" id="period-el">1</h2>
+                <div class="btn-el">
+                    <button onclick="addOnePeriod()">+1</button>
+                </div>
+            </div>
+            <div class="guest">
+                <h3>GUEST</h3>
+                <h2 class="points" id="gPoint-el">0</h2>
+                <div class="btn-el">
+                    <button onclick="addOneGuest()">+1</button>
+                    <button onclick="addTwoGuest()">+2</button>
+                    <button onclick="addThreeGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
