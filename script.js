@@ -1,7 +1,6 @@
 const hPointEl = document.getElementById("hPoint-el")
 const periodEl = document.getElementById("period-el")
 const gPointEl = document.getElementById("gPoint-el")
-const newGame = document.getElementById("newGame-el")
 let homePoints = 0
 let period = 1
 let guestPoints = 0
@@ -48,7 +47,7 @@ function addThreeGuest() {
 function addOnePeriod() {
     period += 1
     periodEl.textContent = period
-    if (period == 5) {
+    if (period === 5) {
         restart()
     }
 }
