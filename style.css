@@ -68,9 +68,9 @@ body {
     align-items: center;
 }
 
-.period, .points {
+.period .points {
     color: #FBBF24;
-    width: 160px;
+    
 }
 
 .btn-el {
