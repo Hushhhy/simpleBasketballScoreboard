@@ -1,20 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scrimba Basketball Scoreboard</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="timeGame">
-            <div>
-                <button class="newGame-el" onclick="restart()">
-                    <h3>NEW GAME</h3>
-                </button>
-            </div>
-        </div>
+        <button class="new-game-btn" onclick="restart()">NEW GAME</button>
         <div class="container">
-            <div class="home">
+            <div class="team">
                 <h3>HOME</h3>
                 <h2 class="points" id="hPoint-el">0</h2>
                 <div class="btn-el">
@@ -23,14 +22,14 @@
                     <button onclick="addThreeHome()">+3</button>
                 </div>
             </div>
-            <div class="period">
+            <div class="team period">
                 <h3>PERIOD</h3>
                 <h2 class="points" id="period-el">1</h2>
                 <div class="btn-el">
                     <button onclick="addOnePeriod()">+1</button>
                 </div>
             </div>
-            <div class="guest">
+            <div class="team">
                 <h3>GUEST</h3>
                 <h2 class="points" id="gPoint-el">0</h2>
                 <div class="btn-el">

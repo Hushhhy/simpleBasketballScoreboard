@@ -1,96 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 @font-face {
-    font-family: CursedTimerUlil-Aznm;
-    src: url(CursedTimerUlil-Aznm.ttf);
+    font-family: "CursedTimer";
+    src: url("./assets/CursedTimerUlil-Aznm.ttf") format("truetype");
 }
-
 
 body {
     margin: 0;
+    min-height: 100vh;
     background-color: #0C4A6E;
-}
-
-.timer-el, .points, .btn-el button{
-    font-family: CursedTimerUlil-Aznm, serif;
-}
-
-.timeGame {
-    padding-bottom: 5%;
-    margin-top: 10%;
-    text-align: center;
-}
-
-.newGame-el {
-    background-color: red;
-    border: solid 1px black;
-    border-radius: 0%;
     color: white;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
-.newGame-el:hover {
-    opacity: 60%;
-    transition: 0.2s;
+.new-game-btn {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    padding: 20px 50px;
     cursor: pointer;
 }
 
-.timer-el {
-    background-color: black;
-    width: 30%;
-    text-align: center;
-    font-size: xx-large;
-    color: #FBBF24;
+.new-game-btn:hover {
+    opacity: 60%;
+    transition: 0.2s;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    color: white;
-}
-
-.container h3 {
-    font-family: "Press Start 2P", system-ui;
-    font-size: 30px;
-    margin-bottom: -20%;
-}
-
-.home, .guest, .period {
-    width: 25%;
-}
-
-.period .points {
-    color: #FBBF24;
-    display: flex;
     justify-content: center;
-    padding-left: 10%;
+    gap: 120px;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.team h3 {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 40px;
+    margin: 0;
+}
+
+.period h3 {
+    color: #FBBF24;;
 }
 
 .points {
-    background-color: black;
+    font-family: "CursedTimer", monospace;
+    font-size: 130px;
     color: #F94F6D;
-    height: 60%;
+    background-color: black;
+    width: 280px;
+    height: 170px;
+    margin: 0;
+    border-radius: 6px;
     display: flex;
-    justify-content: right;
-    padding-right: 10%;
+    justify-content: center;
     align-items: center;
-    font-size: 90px;
+}
+
+.period, .points {
+    color: #FBBF24;
+    width: 160px;
 }
 
 .btn-el {
-    margin-top: -20%;
     display: flex;
-    justify-content: center;
-    gap: 5%;
+    gap: 12px;
 }
 
 .btn-el button {
+    font-family: "CursedTimer", monospace;
+    font-size: 36px;
     background-color: #0C4A6E;
     color: #FF383C;
-    border: solid 3px #FF383C;
-    border-radius: 10%;
-    font-size: 40px;
+    border: 3px solid #FF383C;
+    border-radius: 6px;
+    padding: 8px 14px;
     cursor: pointer;
-    padding: 5px;
 }
