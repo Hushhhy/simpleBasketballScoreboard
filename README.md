@@ -4,9 +4,9 @@ A retro-style basketball scoreboard: add 1, 2 or 3 points to each team, track th
 
 Solo project from the [Scrimba Fullstack Developer Path](https://scrimba.com/fullstack-path-c0fullstack) (*JavaScript Fundamentals* module), my first project built from scratch, based on a Figma design provided by Scrimba.
 
-**🌐 Live demo:** [your-link.netlify.app](https://your-link.netlify.app)
+**🌐 Live demo:** [Scrimba Basketball App](https://scrimbasketballapp.netlify.app)
 
-![Screenshot of the Basketball Scoreboard](./screenshot.png)
+![Screenshot of the Basketball Scoreboard](./assets/screenshot.png)
 
 ## ✨ Features
 
